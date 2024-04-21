@@ -9,10 +9,9 @@ function Person(name, age) {
 	}
 }
 
-function Employee(name, age, jobTitle) {
+function Employee extends Person(name, age, jobTitle) {
 	constructor(name,age,jobTitle){
-		this.name = name;
-		this.age = age;
+		super(name,age)
 		this.jobTitle = jobTitle
 	}
 	jobGreet(){
