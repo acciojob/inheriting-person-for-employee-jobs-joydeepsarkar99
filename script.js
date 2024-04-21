@@ -11,7 +11,8 @@ function Person(name, age) {
 
 function Employee(name, age, jobTitle) {
 	constructor(name,age,jobTitle){
-		super(name,age)
+		this.name = name;
+		this.age = age;
 		this.jobTitle = jobTitle
 	}
 	jobGreet(){
